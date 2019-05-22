@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ノイズレスサーチ＋</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/background.js"></script>
+    <link rel="stylesheet" href="css/popup.css" type="text/css">
+</head> 
+<body class="body">
+    <font size="5"><b>ノイズレスサーチ＋</b></font>
+    <br>
+    <br>
+    <input id="tab_web" type="radio" checked class="input1" value="web" name="tab1">
+    <label class="lbl1" for="tab_web">ウェブ</label>
+    <input id="tab_img" type="radio" class="input1" value="img" name="tab1">
+    <label class="lbl1" for="tab_img">イメージ</label>
+    <br>
+    <nobr>
+    <div id="tab2">        
+        <input id="tab_all" type="radio" class="input2" name="tab2" value="tab_all" checked>
+        <label class="lbl2" for="tab_all">すべて</label>              
+        <input id="tab_hosp_gov" type="radio" class="input2" name="tab2" value="tab_hosp_gov">
+        <label class="lbl2" for="tab_hosp_gov">病院・政府</label>        
+        <input id="tab_hosp" type="radio" class="input2" name="tab2" value="tab_hosp">
+        <label class="lbl2" for="tab_hosp">病院</label>        
+        <input id="tab_gov" type="radio" class="input2" name="tab2" value="tab_gov">
+        <label class="lbl2" for="tab_gov">政府</label>
+        <input id="tab_msd" type="radio" class="input2" name="tab2" value="tab_msd"> 
+        <label class="lbl2" for="tab_msd" >MSD</label>
+        <input id="tab_com" type="radio" class="input2" name="tab2" value="tab_com">
+        <label class="lbl2" for="tab_com" >企業</label>
+        <input id="tab_com_hosp_gov" type="radio" class="input2" name="tab2" value="tab_com_hosp_gov">
+        <label class="lbl2" for="tab_com_hosp_gov" >企業・病院・政府</label>
+    </div>
+
+    </nobr>
+    <br>
+    <nobr>
+    <input type="text" id="word" autofocus/>
+    <button type=button id="search"> 検索 </button>
+    </nobr>
+    <br>
+    <br>
+    <font size="3"><b>設定</b></font><br>
+    <a href="#" id="shortcuts">ショートカットキー変更</a>
+</body>
+</html>
